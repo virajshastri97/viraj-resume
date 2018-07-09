@@ -6,7 +6,8 @@
 }
 
 body {
-	background-image: url('./assets/img/circuit.jpg');
+	/*background-image: url('./assets/img/circuit.jpg');*/
+	background: #EDF5FF
 }
 
 ul {
@@ -75,22 +76,38 @@ sup .fas {
 	margin: 10px;
 	padding: 10px 8px;
 }
-/*
-.bg {
+
+.bg, .bg1 {
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
+}
+
+.bg {
+	z-index: -2;
+	background-color: #095EC6;
+	-webkit-clip-path: polygon(68% 25%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 36% 59%);
+	clip-path: polygon(68% 25%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 36% 59%);
+}
+
+.bg1 {
 	z-index: -1;
-	background-color: rgba(51, 4, 111, 0.9);
-	-webkit-clip-path: polygon(22% 45%, 100% 0, 0 0, 0% 100%);
-	clip-path: polygon(22% 45%, 100% 0, 0 0, 0% 100%);
-}*/
+	background-color: #1F7CEf;
+	-webkit-clip-path: polygon(70% 33%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 38% 67%);
+	clip-path: polygon(70% 33%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 38% 67%);
+}
 
 @supports ((backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px))) {
 	.rounded-box {
 		background-color: rgba(255, 255, 255, 0.6);
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
+	}
+}
+
+@supports not ((backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px))) {
+	.rounded-box {
+		background-color: rgba(255, 255, 255, 0.95);
 	}
 }
 
@@ -116,9 +133,6 @@ sup .fas {
 
 @media only screen and (min-width: 992px) {
 	body {
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
 		display: grid;
 		grid-template-columns: 20% 1fr 20%;
 		grid-template-rows: 35% auto 20px;
@@ -126,6 +140,16 @@ sup .fas {
 		". header ."
 		". main ."
 		". footer .";
+	}
+
+	.bg {
+		-webkit-clip-path: polygon(65% 35%, 100% 17%, 100% 100%, 10% 100%, 35% 80%);
+		clip-path: polygon(65% 35%, 100% 17%, 100% 100%, 10% 100%, 35% 80%);
+	}
+
+	.bg1 {
+		-webkit-clip-path: polygon(75% 35%, 100% 17%, 100% 100%, 10% 100%, 45% 80%);
+		clip-path: polygon(75% 35%, 100% 17%, 100% 100%, 10% 100%, 45% 80%);
 	}
 
 	.header {
