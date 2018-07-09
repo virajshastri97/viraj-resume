@@ -29,6 +29,7 @@ hr {
 
 #desc {
 	text-align: justify;
+	line-height: 2;
 }
 
 h2 {
@@ -59,6 +60,11 @@ sup .fas {
 
 #social-links .fas, #social-links .fab {
 	padding: 0px 5%;
+}
+
+#social-links .fas:hover, #social-links .fab:hover {
+	transform: scale(1.2);
+	transition: transform 0.2s ease-out;
 }
 
 .rounded-box {
@@ -141,6 +147,7 @@ sup .fas {
 	#desc {
 		grid-area: desc;
 		align-self: center;
+		padding-right: 10%;
 	}
 
 	#social-links {
