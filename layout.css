@@ -1,0 +1,161 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-image: url('./assets/img/circuit.jpg');
+}
+
+ul {
+	list-style-position: inside;
+}
+
+img {
+	max-height:200px;
+	max-width:200px;
+	border-radius:50%;
+}
+
+hr {
+	display:block;
+	border-style:inset;
+	border-width:1px;
+	color:#666666;
+	margin: 10px 0px;
+}
+
+#desc {
+	text-align: justify;
+}
+
+h2 {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+h2 .fa-circle {
+	color: #444444;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#social-links a:hover {
+	text-decoration: none;
+}
+
+sup .fas {
+	color: #666666;
+}
+
+#social-links .fas, #social-links .fab {
+	padding: 0px 5%;
+}
+
+.rounded-box {
+	border: 2px solid #F1F1F1;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	text-align: center;
+	margin: 10px;
+	padding: 10px 8px;
+}
+
+@supports ((backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px))) {
+	.rounded-box {
+		background-color: rgba(255, 255, 255, 0.6);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+	}
+}
+
+.fa-li {
+	color: #666666;
+}
+
+.fa-github {
+	color: #333333;
+}
+
+.fa-twitter {
+	color: #1DA1F2;
+}
+
+.fa-linkedin {
+	color: #0077B5;
+}
+
+.fa-file-download {
+	color: #007EE5;
+}
+
+@media only screen and (min-width: 992px) {
+	body {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		display: grid;
+		grid-template-columns: 20% 1fr 20%;
+		grid-template-rows: 35% auto;
+		grid-template-areas: 
+		". header ."
+		". main .";
+	}
+
+	.header {
+		grid-area: header;
+		display: inline-grid;
+		grid-template-rows: auto auto;
+		grid-template-areas: 
+			"description"
+			"links";
+	}
+
+	#description {
+		grid-area: description;
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 
+			"name name"
+			"dp desc";
+	}
+
+	#name {
+		grid-area: name;
+	}
+
+	#dp {
+		grid-area: dp;
+	}
+
+	#desc {
+		grid-area: desc;
+		align-self: center;
+	}
+
+	#social-links {
+		grid-area: links;
+	}
+
+	#desc-separator {
+		display:block;
+		border-style:inset;
+		border-width:0px;
+		color:#666666;
+		margin: 0px 0px;
+	}
+
+	.main {
+		grid-area: main;
+	}
+}
