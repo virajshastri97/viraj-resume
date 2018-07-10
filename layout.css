@@ -6,7 +6,6 @@
 }
 
 body {
-	/*background-image: url('./assets/img/circuit.jpg');*/
 	background: #EDF5FF
 }
 
@@ -35,6 +34,10 @@ hr {
 
 h2 {
 	text-align: center;
+	color: #444444;
+}
+
+h2 .fas {
 	color: #FFFFFF;
 }
 
@@ -70,7 +73,7 @@ sup .fas {
 
 .rounded-box {
 	border: 2px solid #F1F1F1;
-	border-radius: 4px;
+	border-radius: 10px;
 	background-color: #FFFFFF;
 	text-align: center;
 	margin: 10px;
@@ -109,6 +112,11 @@ sup .fas {
 	.rounded-box {
 		background-color: rgba(255, 255, 255, 0.95);
 	}
+}
+
+.footer {
+	text-align: center;
+	color: #FFFFFF;
 }
 
 .fa-li {
@@ -203,7 +211,5 @@ sup .fas {
 
 	.footer {
 		grid-area: footer;
-		text-align: center;
-		color: #FFFFFF;
 	}
 }
