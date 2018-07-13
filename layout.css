@@ -72,12 +72,13 @@ sup .fas {
 }
 
 .rounded-box {
-	border: 2px solid #F1F1F1;
+	border: 1px solid #F1F1F1;
 	border-radius: 10px;
 	background-color: #FFFFFF;
 	text-align: center;
 	margin: 10px;
 	padding: 10px 8px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 .bg, .bg1 {
@@ -88,14 +89,15 @@ sup .fas {
 
 .bg {
 	z-index: -2;
-	background-color: #095EC6;
+	background: #369497;
 	-webkit-clip-path: polygon(68% 25%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 36% 59%);
 	clip-path: polygon(68% 25%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 36% 59%);
 }
 
 .bg1 {
 	z-index: -1;
-	background-color: #1F7CEf;
+	background: #27F8FF;
+	background: linear-gradient(135deg, #28B9BE, #27F8FF);
 	-webkit-clip-path: polygon(70% 33%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 38% 67%);
 	clip-path: polygon(70% 33%, 100% 13%, 100% 100%, 0 100%, 0% 75%, 38% 67%);
 }
