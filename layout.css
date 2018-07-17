@@ -63,7 +63,7 @@ sup .fas {
 }
 
 #social-links .fas, #social-links .fab {
-	padding: 0px 5%;
+	padding: 0px 3%;
 }
 
 #social-links .fas:hover, #social-links .fab:hover {
@@ -104,7 +104,7 @@ sup .fas {
 
 @supports ((backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px))) {
 	.rounded-box {
-		background-color: rgba(255, 255, 255, 0.6);
+		background-color: rgba(255, 255, 255, 0.8);
 		-webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
 	}
@@ -197,6 +197,11 @@ sup .fas {
 
 	#social-links {
 		grid-area: links;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
 	#desc-separator {
